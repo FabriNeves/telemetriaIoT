@@ -1,0 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+  - 27017
+
+tasks:
+  - init: mongod --fork --logpath /tmp/mongod.log
+    command: mongo --host=localhost
